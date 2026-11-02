@@ -1,0 +1,7 @@
+# ignore temp files
+*.tmp
+
+# ignore pytest and pytest_cache
+__pycache__/
+.pytest_cache/
+
