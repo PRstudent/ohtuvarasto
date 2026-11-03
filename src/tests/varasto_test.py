@@ -100,4 +100,10 @@ class TestVarasto(unittest.TestCase):
 
         # tarkistetaa että __str__ printtaa oikeanlaisen stringin
         self.assertEqual(saatu_string, "saldo = 2, vielä tilaa 8")
-        
+
+        self.varasto.lisaa_varastoon(11)
+
+        saatu_string = self.varasto.__str__()
+
+        # tarkistetaa että __str__ printtaa oikeanlaisen stringin
+        self.assertEqual(saatu_string, "saldo = 10, vielä tilaa 0")
