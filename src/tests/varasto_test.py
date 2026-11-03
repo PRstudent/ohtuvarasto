@@ -100,3 +100,4 @@ class TestVarasto(unittest.TestCase):
 
         # tarkistetaa että __str__ printtaa oikeanlaisen stringin
         self.assertEqual(saatu_string, "saldo = 2, vielä tilaa 8")
+        
