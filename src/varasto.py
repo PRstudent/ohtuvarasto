@@ -26,8 +26,7 @@ class Varasto:
         if maara <= self.paljonko_mahtuu():
             self.saldo = self.saldo + maara
         else:
-            self.saldo = 0                  # tämän pitäisi rikkoa testejä
-            # self.saldo = self.tilavuus    # tämä on toimiva koodirivi joka ei riko testejä
+            self.saldo = self.tilavuus
 
     def ota_varastosta(self, maara):
         if maara < 0:
@@ -40,8 +39,7 @@ class Varasto:
 
         self.saldo = self.saldo - maara
 
-        return 4                            # tämän pitäisi rikkoa testejä
-        # return maara                      # tämä on toimiva koodirivi joka ei riko testejä
+        return maara
 
     def __str__(self):
         return f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()}"
